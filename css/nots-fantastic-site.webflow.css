@@ -2308,9 +2308,14 @@ figcaption {
   background-color: transparent;
   text-align: center;
 }
-
 .rl-styleguide-logo {
-  margin-bottom: 50px;
+  position: static;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 .rl-styleguide-message-wrapper {

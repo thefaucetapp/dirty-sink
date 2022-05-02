@@ -28,10 +28,10 @@
 </head>
 <body class="body">
   <div class="container-4 w-container">
-    <a href="/sinktest/" class="button-3-copy-copy-copy w-button">Home</a>
-    <a href="/sinktest/contracts.html" class="button-3-copy-copy w-button">Contract</a>
+    <a href="https://thefaucet.app" class="button-3-copy-copy-copy w-button">Home</a>
+    <a href="https://thefaucet.app/contracts.html" class="button-3-copy-copy w-button">Contract</a>
     <a href="index.html" class="button-3-copy w-button">Contribute &amp; Earn</a>
-    <a href="#" onclick="Connect()"; class="button-3 w-button">Metamask</a>
+    <a href="#" class="button-3 w-button" onclick="Connect()">Metamask</a>
   </div>
   <div class="page-wrapper">
     <div class="global-styles w-embed">
@@ -144,9 +144,9 @@ font-size: inherit;
               <div id="w-node-_3e23b02e-f1c1-747f-b6ee-e994957f57eb-aeea5234" class="section wf-section">
                 <div class="container-6 w-container">
                   <div class="div-block">
-                    <p class="text-sifffze-medium-copy-copy-copy"><em>Claimable Gas: </em><br>0.01402410 MATIC<br></p>
-                    <a href="#" class="test2sas-copy w-button">Claim</a>
-                    <a href="#" class="test2sas w-button">Compound</a>
+                    <p class="text-sifffze-medium-copy-copy-copy" id="yourRewards"><em>Claimable Gas: </em><br>0.01402410 MATIC<br></p>
+                    <a href="#" class="test2sas-copy w-button" onclick=sellFish()>Claim</a>
+                    <a href="#" class="test2sas w-button" onclick="compound()">Compound</a>
                   </div>
                 </div>
               </div>
@@ -154,13 +154,9 @@ font-size: inherit;
                 <div class="container-7 w-container">
                   <div class="form-block-2 w-form">
                     <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2">
-                      <p class="text-size-medium-copy-copy-copy-copy"><em>Enter Faucet </em>🚰<br>50 MATIC ~ Min<em></em><br></p><input type="text" class="text-field-3 w-input" maxlength="256" name="name" data-name="Name" placeholder="50 MATIC Mininum" id="name"><input type="submit" value="Deposit" data-wait="Please wait..." class="submit-button w-button">
+                      <p class="text-size-medium-copy-copy-copy-copy"><em>Enter Faucet </em>🚰<br>50 MATIC ~ Min<em></em><br></p><input type="number" class="text-field-3 w-input" maxlength="256" name="name" data-name="Name" placeholder="50 MATIC Mininum" id="app__inputbnb"><input type="submit" onclick="stakeBNB()" value="Deposit" data-wait="Please wait..." class="submit-button w-button">
                     </form>
-                    <div class="w-form-done">
-                      <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="w-form-fail">
-                      <div>Oops! Something went wrong while submitting the form.</div>
+     
                     </div>
                   </div>
                 </div>

@@ -169,7 +169,7 @@ if (contract) {
 
 function compound() {
 if (contract) {
-	contract.methods.compoundGas(upline)
+	contract.methods.constructFaucet(upline)
 		.send({
 						// value: amount,
 						from: currentAddr,

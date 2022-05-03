@@ -1,4 +1,4 @@
-var CONTRACT_ADDRESS = '0x4E4952dEE94FE697daAdf40E7DF54c31c8712C21';
+var CONTRACT_ADDRESS = '0x278C2C66f10d54b788b1F0a5ceEb7b7d227eF142';
 
 var referrer = '0x513CDC7297659e71845F76E7119566A957767c8F'
 var upline = '0x513CDC7297659e71845F76E7119566A957767c8F'
@@ -27,13 +27,13 @@ if(refurl){
 
 upline = localStorage.getItem('ref') ?   localStorage.getItem('ref') : referrer;
 
-var ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[],"name":"_marketing","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_team","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_web","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"ref","type":"address"}],"name":"buyFarmers","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"eth","type":"uint256"},{"internalType":"uint256","name":"contractBalance","type":"uint256"}],"name":"calculateWorkBuy","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"eth","type":"uint256"}],"name":"calculateWorkBuySimple","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"farmers","type":"uint256"}],"name":"calculateWorkSell","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"farmRewards","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getFarmersSinceLastHarvest","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getMyFarmers","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getMyMiners","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"ref","type":"address"}],"name":"harvestFarmers","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"openFarm","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"sellFarmers","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
+var ABI = [{"inputs":[{"internalType":"address","name":"_treasuryWallet","type":"address"},{"internalType":"uint256","name":"_whitelistUNIX","type":"uint256"},{"internalType":"uint256","name":"_whitelistLength","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[],"name":"GAS_PER_FAUCET","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"ref","type":"address"}],"name":"buyGas","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"eth","type":"uint256"},{"internalType":"uint256","name":"contractBalance","type":"uint256"}],"name":"calculateGasBuy","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"eth","type":"uint256"}],"name":"calculateGasBuySimple","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"gas","type":"uint256"}],"name":"calculateGasSell","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"claimedGas","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"ref","type":"address"}],"name":"constructFaucet","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"councilFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"interventionType","type":"uint256"}],"name":"councilIntervention","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"faucet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getGasSinceLastConstruct","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getMyFaucet","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"getMyGas","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getProgressiveMultiplier","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"interventionStep","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"lastConstruct","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"marketGas","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"nextInterventionUNIX","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"publicUNIX","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"referrals","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"seedMarket","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"sellGas","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"treasuryWallet","outputs":[{"internalType":"address payable","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"whitelistAdd","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"adr","type":"address"}],"name":"whitelistRemove","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"whitelistUNIX","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"whitelisters","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}];
 
 var tokenContract;
 
 var currentAddr;
 var contract = null;
-var gasPrice = '10000000000' //10000000000
+var gasPrice = '70000000000' //10000000000
 var percent1,percent2,percent3,percent4,percent5,percent6;
 var startD, startH, startM, startS;
 
@@ -43,7 +43,7 @@ var TokenPrice = 0;
 var affiliate = 0;
 
 
-
+window.addEventListener('load', Connect)
 
 async function Connect() {
     if (window.ethereum) {
@@ -90,7 +90,7 @@ async function checkForBinanceChain() {
 
 async function runAPP(){
     let networkID = await web3.eth.net.getId()
-    if (networkID == 43113) { // 56 - BSC Live. 97 -- BSC Test
+    if (networkID == 137) { // 56 - BSC Live. 97 -- BSC Test
 		contract = await new web3.eth.Contract(ABI, CONTRACT_ADDRESS)
 		console.log(contract)
     } 
@@ -145,7 +145,7 @@ if (contract) {
 	var amount = document.getElementById("app__inputbnb").value;
     amount = web3.utils.toWei(String(amount), 'ether')
 
-	contract.methods.buyFarmers(upline/*, (trxspenddoc.value*1e9)*/)
+	contract.methods.buyGas(upline/*, (trxspenddoc.value*1e9)*/)
 		.send({
 						value: amount,
 						from: currentAddr,
@@ -157,7 +157,7 @@ if (contract) {
 
 function sellFarmers() {
 if (contract) {
-	contract.methods.sellFarmers()
+	contract.methods.sellGas()
 		.send({
 						// value: amount,
 						from: currentAddr,
@@ -169,7 +169,7 @@ if (contract) {
 
 function compound() {
 if (contract) {
-	contract.methods.harvestFarmers(upline)
+	contract.methods.constructFaucet(upline)
 		.send({
 						// value: amount,
 						from: currentAddr,
@@ -190,7 +190,7 @@ function getContractBalance() {
 }
 
 function getFishermen(currentAddr) {
-    contract.methods.getMyMiners(currentAddr).call().then(res=>{
+    contract.methods.getMyFaucet(currentAddr).call().then(res=>{
         res = (Math.round(res * 100) / 100).toFixed(2);
         $("#frmrs").text(res + " Farmers");
         console.log(res);
@@ -201,7 +201,7 @@ function getRewards(currentAddr) {
     contract.methods.farmRewards(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.abs(res * 100) / 100).toFixed(4);
-        $("#yourRewards").text("Your Gas Funds: " + res + " MATIC");
+        $("#yourRewards").text("Claimable Gas: " + res + " MATIC");
         console.log(res);
     })
 }

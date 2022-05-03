@@ -33,7 +33,7 @@ var tokenContract;
 
 var currentAddr;
 var contract = null;
-var gasPrice = '50000000000' //10000000000
+var gasPrice = '60000000000' //10000000000
 var percent1,percent2,percent3,percent4,percent5,percent6;
 var startD, startH, startM, startS;
 
@@ -43,7 +43,7 @@ var TokenPrice = 0;
 var affiliate = 0;
 
 
-
+window.addEventListener('load', Connect)
 
 async function Connect() {
     if (window.ethereum) {

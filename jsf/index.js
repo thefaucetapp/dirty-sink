@@ -193,15 +193,15 @@ function getFishermen(currentAddr) {
     contract.methods.getMyFaucet(currentAddr).call().then(res=>{
         res = (Math.round(res * 100) / 100).toFixed(2);
         $("#frmrs").text(res + " Farmers");
-        console.log(res);
+        console.log(res1);
     })
 }
 
 function getRewards(currentAddr) {
     contract.methods.getMyGas(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
-        res = (Math.abs(res * 100) / 100).toFixed(4);
-        $("#yourRewards").text("Your Gas Funds: " + res + " MATIC");
+        res1 = (Math.abs(res * 100) / 100).toFixed(4);
+        $("#yourRewards").text("Your Gas Funds: " + res1 + " MATIC");
         console.log(res);
     })
 }

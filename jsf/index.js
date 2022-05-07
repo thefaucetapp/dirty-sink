@@ -198,7 +198,7 @@ function getFishermen(currentAddr) {
 }
 
 function getRewards(currentAddr) {
-    contract.methods.farmRewards(currentAddr).call().then(res=>{
+    contract.methods.getMyFaucet(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.abs(res * 100) / 100).toFixed(4);
         $("#yourRewards").text("Your Gas Funds: " + res + " MATIC");

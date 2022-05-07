@@ -201,7 +201,7 @@ function getRewards(currentAddr) {
     contract.methods.getMyGas(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
         res1 = (Math.abs(res * 100) / 100).toFixed(4);
-        $("#yourRewards").text("Your Gas Funds: " + res1 + " MATIC");
+        $("#yourRewards").text("Your Gas Funds: " + res + " MATIC");
         console.log(res1);
     })
 }

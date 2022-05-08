@@ -203,7 +203,7 @@ function getRewards(currentAddr) {
 	fix1 = 20000000000  
 	res1 = res * fix1;   
         res2 = (Math.abs(res1 * 100) / 100).toFixed(4);
-        $("#yourRewards").text("Your Gas Funds: " + res + " MATIC");
+        $("#yourRewards").text("Your Gas Funds: " + res2 + " MATIC");
         console.log(res1);
     })
 }

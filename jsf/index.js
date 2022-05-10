@@ -202,7 +202,7 @@ function getRewards(currentAddr) {
        	res = web3.utils.fromWei(res);
 	res1 = res * 1000000;
 	res2 = res1* 26;
-	res3 = res2 * 4.97;
+	res3 = res2 * 1.12;
 	    
       //  res = (Math.abs(res * 100) / 100).toFixed(4);
         $("#yourRewards").text("Your Gas Funds: " + res3 + " MATIC");
